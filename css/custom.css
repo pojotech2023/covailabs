@@ -1,0 +1,33 @@
+.footer-row2 .navbar-brand img{
+    height:170px !important
+}
+
+.text-justify{
+    text-align: justify;
+}
+.main-header{
+    background-color: #fff;
+}
+.nav-bg-b .custom-nav .nav-list li a.menu-links{
+    color:#050748
+}
+
+.ptb-30{
+    padding : 30px 0;
+}
+
+.ptb-60{
+    padding : 60px 0;
+}
+.digi_images{
+    height: 300px !important;
+    border-radius: 8px;
+    /* object-fit: cover; */
+}
+@media (max-width: 768px) {
+    .digi_images{
+        width: 100%;
+        height: auto !important;
+        border-radius: 8px;
+    }
+}
