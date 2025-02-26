@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8" />
-	<title>B Tech</title>
+	<title>Covai Bio Labs</title>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 
@@ -11,7 +11,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="theme-color" content="#4302b2">
 
-	<link href="images/logo/logo.jpeg" rel="icon">
+	<link href="img/covai/img/logo1.png" rel="icon">
 
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/plugin.min.css" rel="stylesheet">
@@ -19,11 +19,45 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;family=Poppins:wght@300;400;500;600;700;800;900&amp;display=swap"
 		rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
 	<link href="css/style.css" rel="stylesheet">
 	<link href="css/responsive.css" rel="stylesheet">
 	<link href="css/darkmode.css" rel="stylesheet">
 	<link href="css/custom.css" rel="stylesheet">
+	<style>
+		.full-image-card {
+			display: flex;
+			flex-direction: column;
+			min-height: 100%;
+		}
+
+		.info-text-block {
+			flex-grow: 1;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.info-text-block ul {
+			flex-grow: 1;
+			padding: 0;
+			margin: 0;
+			list-style: none;
+		}
+
+		.info-text-block ul li {
+			margin-bottom: 8px;
+			line-height: 1;
+		}
+
+		.info-text-block button {
+			margin-top: auto;
+			width: 50%;
+			display: flex;
+			justify-content: center;
+		}
+	</style>
 </head>
 
 <body>
@@ -32,8 +66,8 @@
 		<div class="container-fluid m-pad">
 			<div class="menu-header">
 				<div class="dsk-logo"><a class="nav-brand" href="index.html">
-						<img src="images/logo/logo.jpeg" alt="Logo" class="mega-white-logo" />
-						<img src="images/logo/logo.jpeg" alt="Logo" class="mega-darks-logo" />
+					<img src="img/covai/img/logo.jpg" alt="Logo" class="mega-white-logo" style="width: 150px;"/>
+					<img src="img/covai/img/logo.jpg" alt="Logo" class="mega-darks-logo" style="width: 150px;"/>
 					</a>
 				</div>
 				<div class="custom-nav" role="navigation">
@@ -47,11 +81,11 @@
 						</li>
 
 						<li>
-							<a href="products.html" class="menu-links">Digital products</a>
+							<a href="products.html" class="menu-links">Health Package</a>
 						</li>
-						<li>
+						<!-- <li>
 							<a href="our-clients.html" class="menu-links">Account Services</a>
-						</li>
+						</li> -->
 						<li>
 							<a href="contact-us.html" class="menu-links">Contact Us</a>
 						</li>
@@ -82,11 +116,11 @@
 					</li>
 
 					<li>
-						<a href="products.html">Digital products</a>
+						<a href="products.html">Health Package</a>
 					</li>
-					<li>
+					<!-- <li>
 						<a href="our-clients.html">Account Services</a>
-					</li>
+					</li> -->
 					<li>
 						<a href="contact-us.html">Contact Us</a>
 					</li>
@@ -113,21 +147,23 @@
 				<div class="media mt15">
 					<div class="icondive"><img src="images/icons/call.svg" alt="icon"></div>
 					<div class="media-body getintouchinfo">
-						<a href="tel:+91 84385 85876">+91 84385 85876</a>
-						<a href="tel:+91 96004 86876">+91 96004 86876</a>
+						<a href="tel:+918807091207" target="_blank">+91 88070 91207
+							<span>Contact Call</span>
+						</a>
 					</div>
 				</div>
 				<div class="media mt15">
 					<div class="icondive"><img src="images/icons/whatsapp.svg" alt="icon"></div>
 					<div class="media-body getintouchinfo">
-						<a href="https://wa.me/+918438585876" target="_blank">+91 84385 85876</a>
-						<a href="https://wa.me/+919600486876" target="_blank">+91 96004 86876</a>
+						<a href="https://wa.me/+918807091207" target="_blank">+91 88070 91207
+							<span>Contact Whatsapp</span>
+						</a>
 					</div>
 				</div>
 				<div class="media mt15">
 					<div class="icondive"><img src="images/icons/mail.svg" alt="icon"></div>
 					<div class="media-body getintouchinfo">
-						<a href="mailto:btechinfosolutions2023@gmail.com" target="_blank">btechinfosolutions2023@gmail.com
+						<a href="mailto:covaibiolabs@gmail.com" target="_blank">covaibiolabs@gmail.com
 							<span>Online Support</span></a>
 					</div>
 				</div>
@@ -135,26 +171,23 @@
 					<div class="icondive"><img src="images/icons/map.svg" alt="icon"></div>
 					<div class="media-body getintouchinfo">
 						<a href="#">
-							No.11/A, Subramaniya Samy Kovil Street,
-Melachinthamani,
-Tiruchirappalli,
-Tamil Nadu - 620002. <span>Visit Our Office</span></a>
+							<span>Visit Our Lab</span></a>
 					</div>
 				</div>
 			</div>
 			<div class="contact-data mt30">
 				<h4>Follow Us On:</h4>
 				<div class="social-media-linkz mt10">
-					<a href="https://www.facebook.com/btechinfosolutions
-					" target="blank"><i class="fab fa-facebook"></i></a>
-				
-					<a href=" https://www.instagram.com/btech.infosolutions" target="blank"><i
+					<a href="https://www.facebook.com/home.php" target="blank"><i class="fab fa-facebook"></i></a>
+
+					<a href="https://www.instagram.com/covaibiolabs?igsh=MXVqZWR4M2RnNWRiMA==" target="blank"><i
 							class="fab fa-instagram"></i></a>
+					<a href="https://www.youtube.com/channel/UCkxHwdAXqdK_0-ZYN1d_l7w" target="blank"><i
+							class="fab fa-youtube"></i></a>
 				</div>
 			</div>
 		</div>
 	</div>
-
 
 	<section class="breadcrumb-area banner-1">
 		<div class="text-block">
@@ -163,10 +196,10 @@ Tamil Nadu - 620002. <span>Visit Our Office</span></a>
 					<div class="col-lg-12 v-center">
 						<div class="bread-inner">
 							<div class="bread-menu">
-								
+
 							</div>
 							<div class="bread-title">
-								<h2>Digital Products</h2>
+								<h2>Health Packages</h2>
 							</div>
 						</div>
 					</div>
@@ -181,228 +214,218 @@ Tamil Nadu - 620002. <span>Visit Our Office</span></a>
 			<div class="row">
 				<div class="col-lg-4 col-sm-6">
 					<div class="full-image-card hover-scale bg-light rounded shadow p-3">
-						<h4 class="text-center pb-2">Digital Visiting Cards</h4>
-						<div class=""><a href="#"><img src="img/digital/Digital-business-cards.jpeg" alt="products"
+						<h4 class="text-center pb-2">Health Package 1</h4>
+						<div class=""><a href="#"><img src="img/covai/img/blood1.webp" alt="products"
 									class="digi_images" width="100%" /></a>
 						</div>
 						<div class="info-text-block text-center">
-							<h4>Starting from Rs. 499</h4>
+							<h4 class="text-center">Our Price - <span style="text-decoration: line-through; color: red;">₹ 1500</span> ₹ 399</h4>
+
 							<p>
-								DIGIBIZCARDS - (Digital Business Card It's Mini Wepsite) Easily create, customize & share your digital business cards. Share your business info with ANYONE, ANYTIME, ANYWHERE.</p>
+							<ul class="text-justify">
+								<li>1. BP</li>
+								<li>2. PULSE</li>
+								<li>3. CBC</li>
+								<li>4. FBS</li>
+								<li>5. UREA </li>
+								<li>6. CREATININE</li>
+								<li>7. URINE ROUTINE </li>
+								<li>8. Free Health consultation</li>
+							</ul>
+							</p>
+							<button type="button" class="btn btn-primary mt-2" data-bs-toggle="modal"
+								data-bs-target="#bookingModal">
+								Book Now
+							</button>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-sm-6">
 					<div class="full-image-card hover-scale bg-light rounded shadow p-3">
-						<h4 class="text-center pb-2">NFC Smart Cards</h4>
-						<div class=""><a href="#"><img src="img/digital/nfc.jpg" alt="products"
-									class="digi_images" width="100%" /></a>
+						<h4 class="text-center pb-2">Health Package 2</h4>
+						<div class=""><a href="#"><img src="img/covai/img/blood2.jpg" alt="products" class="digi_images"
+									width="100%" /></a>
 						</div>
 						<div class="info-text-block text-center">
-							<h4>Starting from Rs. 999</h4>
+							<h4 class="text-center">Our Price - <span style="text-decoration: line-through; color: red;">₹ 2200</span >₹ 650</h4>
 							<p>
-								Tap and connect effortlessly! Our NFC smart cards allow instant sharing of your business details with a single tap.</p>
+							<ul class="text-justify">
+								<li>1. BP</li>
+								<li>2. PULSE</li>
+								<li>3. HIV </li>
+								<li>4. HbsAG</li>
+								<li>5. HCV </li>
+								<li>6. FREE HEALTH CONSULATION</li>
+							</ul>
+							</p>
+							<button type="button" class="btn btn-primary mt-2" data-bs-toggle="modal"
+								data-bs-target="#bookingModal">
+								Book Now
+							</button>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-sm-6">
 					<div class="full-image-card hover-scale bg-light rounded shadow p-3">
-						<h4 class="text-center pb-2">Top Laptop Brands</h4>
-						<div class=""><a href="#"><img src="img/digital/Laptop sales.jpeg" alt="products"
-									class="digi_images" width="100%" /></a>
+						<h4 class="text-center pb-2">Health Package 3</h4>
+						<div class=""><a href="#"><img src="img/covai/img/blood4.jpg" alt="products" class="digi_images"
+									width="100%" /></a>
 						</div>
 						<div class="info-text-block text-center">
-							<h4>Starting from Rs. 16999</h4>
-							<p>
-								All Branded Laptops are available in feasible price for sale (DELL / HP / Lenovo).</p>
+							<h4>Our Price - <span style="text-decoration: line-through; color: red;">₹ 2500</span> ₹ 699</h4>
+							<ul class="text-justify">
+								<li>1. BP</li>
+								<li>2. PULSE</li>
+								<li>3. FBS </li>
+								<li>4. THYROID</li>
+								<li>5. RENAL FUNCTION TEST </li>
+								<li>6. LIVER FUNCTION TEST</li>
+								<li>7. LIPID PROFILE</li>
+								<li>8. COMPLETE BLOOD COUNT</li>
+								<li>9. FREE HEALTH CONSULATION</li>
+							</ul>
+							<button type="button" class="btn btn-primary mt-2" data-bs-toggle="modal"
+								data-bs-target="#bookingModal">
+								Book Now
+							</button>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-sm-6">
 					<div class="full-image-card hover-scale bg-light rounded shadow p-3">
-						<h4 class="text-center pb-2">SMS Marketing</h4>
-						<div class=""><a href="#"><img src="img/digital/ams.jpg" alt="products"
-									class="digi_images" width="100%" /></a>
+						<h4 class="text-center pb-2">Health Package 4</h4>
+						<div class=""><a href="#"><img src="img/covai/img/img1.jpg" alt="products" class="digi_images"
+									width="100%" /></a>
 						</div>
 						<div class="info-text-block text-center">
-							<h4>Starting from Rs. 1499</h4>
-							<p>
-								
-Reach your customers directly with bulk SMS campaigns for promotions, alerts, and customer engagement.</p>
+							<h4>Our Price - <span style="text-decoration: line-through; color: red;">₹ 3500</span> ₹ 1199</h4>
+							<ul class="text-justify">
+								<li>1. BP</li>
+								<li>2. PULSE</li>
+								<li>3. FBS </li>
+								<li>4. HBA1C</li>
+								<li>5. RENAL FUNCTION TEST </li>
+								<li>6. LIVER FUNCTION TEST</li>
+								<li>7. LIPID PROFILE </li>
+								<li>8. COMPLETE BLOOD COUNT</li>
+								<li>9. COMPLETE URINE ROUTINE </li>
+								<li>10. VITAMIN D</li>
+								<li>11. THYROID</li>
+								<li>12. FREE HEALTH CONSULATION</li>
+							</ul>
+							<button type="button" class="btn btn-primary mt-2" data-bs-toggle="modal"
+								data-bs-target="#bookingModal">
+								Book Now
+							</button>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-sm-6">
 					<div class="full-image-card hover-scale bg-light rounded shadow p-3">
-						<h4 class="text-center pb-2">Email Marketing</h4>
-						<div class=""><a href="#"><img src="img/digital/email-marketting.jpg" alt="products"
-									class="digi_images" width="100%" /></a>
+						<h4 class="text-center pb-2">Health Package 5</h4>
+						<div class=""><a href="#"><img src="img/covai/img/img2.jpg" alt="products" class="digi_images"
+									width="100%" /></a>
 						</div>
 						<div class="info-text-block text-center">
-							<h4>Starting from Rs. 1999</h4>
-							<p> 
-								
-Boost conversions with targeted email campaigns, automated follow-ups, and high-quality lead generation.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-sm-6">
-					<div class="full-image-card hover-scale bg-light rounded shadow p-3">
-						<h4 class="text-center pb-2">WhatsApp Official Software</h4>
-						<div class=""><a href="#"><img src="img/digital/whatsapp.avif" alt="products"
-									class="digi_images" width="100%" /></a>
-						</div>
-						<div class="info-text-block text-center">
-							<h4>Starting from Rs. 7999</h4>
-							<p>
-								
-Engage your audience through WhatsApp bulk messaging, chatbot automation, and promotional campaigns.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-sm-6">
-					<div class="full-image-card hover-scale bg-light rounded shadow p-3">
-						<h4 class="text-center pb-2">Social Media Marketing</h4>
-						<div class=""><a href="#"><img src="img/digital/social_media.jpg" alt="products"
-									class="digi_images" width="100%" /></a>
-						</div>
-						<div class="info-text-block text-center">
-							<h4>Starting from Rs. 9999</h4>
-							<p> 
-								
-								Enhance your brand’s presence with strategic marketing on Facebook, Instagram, LinkedIn, and more.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-sm-6">
-					<div class="full-image-card hover-scale bg-light rounded shadow p-3">
-						<h4 class="text-center pb-2">Digital Marketing</h4>
-						<div class=""><a href="#"><img src="img/digital/digital_marketing.webp" alt="products"
-									class="digi_images" width="100%" /></a>
-						</div>
-						<div class="info-text-block text-center">
-							<h4>Starting from Rs. 19999</h4>
-							<p>		
-                          From SEO to paid ads, we offer complete digital marketing solutions to grow your business online.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-sm-6">
-					<div class="full-image-card hover-scale bg-light rounded shadow p-3">
-						<h4 class="text-center pb-2">Video Marketing</h4>
-						<div class=""><a href="#"><img src="img/digital/video_marketing.jpg" alt="products"
-									class="digi_images" width="100%" /></a>
-						</div>
-						<div class="info-text-block text-center">
-							<h4>Starting from Rs. 1499</h4>
-							<p>								
-								Capture attention with high-quality promotional and explainer videos for social media and ads.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-sm-6">
-					<div class="full-image-card hover-scale bg-light rounded shadow p-3">
-						<h4 class="text-center pb-2">Logo Design</h4>
-						<div class=""><a href="#"><img src="img/digital/logo_designning.png" alt="products"
-									class="digi_images" width="100%" /></a>
-						</div>
-						<div class="info-text-block text-center">
-							<h4>Starting from Rs. 999</h4>
-							<p>								
-								
-								Build a strong brand identity with a unique, creative, and professional logo for your business.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-sm-6">
-					<div class="full-image-card hover-scale bg-light rounded shadow p-3">
-						<h4 class="text-center pb-2">Data Extractors</h4>
-						<div class=""><a href="#"><img src="img/digital/lead_extractor.gif" alt="products"
-									class="digi_images" width="100%" /></a>
-						</div>
-						<div class="info-text-block text-center">
-							<h4>Starting from Rs. 999</h4>
-							<p>								
-								
-Find potential customers and targeted leads to increase sales and business growth.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-sm-6">
-					<div class="full-image-card hover-scale bg-light rounded shadow p-3">
-						<h4 class="text-center pb-2">Website Development</h4>
-						<div class=""><a href="#"><img src="img/digital/web-development.jpg" alt="products"
-									class="digi_images" width="100%" /></a>
-						</div>
-						<div class="info-text-block text-center">
-							<h4>Starting from Rs. 5999</h4>
-							<p>								
-								
-								Get a professional, SEO-friendly, and responsive website customized for your business needs.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-sm-6">
-					<div class="full-image-card hover-scale bg-light rounded shadow p-3">
-						<h4 class="text-center pb-2">Mobile Applications</h4>
-						<div class=""><a href="#"><img src="img/digital/mobile-application-development.webp" alt="products"
-							class="digi_images" width="100%" /></a>
-						</div>
-						<div class="info-text-block text-center">
-							<h4>Starting from Rs. 30000</h4>
-							<p>								
-								
-								We develop Android & iOS mobile apps for businesses, e-commerce, and enterprise solutions.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-sm-6">
-					<div class="full-image-card hover-scale bg-light rounded shadow p-3">
-						<h4 class="text-center pb-2">Billing Software</h4>
-						<div class=""><a href="#"><img src="img/digital/billing-software-development.png" alt="products"
-									class="digi_images" width="100%" /></a>
-						</div>
-						<div class="info-text-block text-center">
-							<h4>Starting from Rs. 4999</h4>
-							<p>								
-								Streamline your business transactions with custom billing software for invoices, payments, and reports.</p>
+							<h4>Our Price - <span style="text-decoration: line-through; color: red;">₹ 4500</span> ₹ 1599</h4>
+							<ul class="text-justify">
+								<li>1. BP</li>
+								<li>2. PULSE</li>
+								<li>3. CALCIUM </li>
+								<li>4. VITAMIN</li>
+								<li>5. TIBC </li>
+								<li>6. FBS</li>
+								<li>7. HbA1C</li>
+								<li>8. CBC</li>
+								<li>9. LIPID PROFILE </li>
+								<li>10. ELECTROLYTES</li>
+								<li>11. URINE ROUTINE </li>
+								<li>12. LFT</li>
+								<li>13. RFT </li>
+								<li>14. FREE HEALTH CONSULATION</li>
+							</ul>
+							<button type="button" class="btn btn-primary mt-2" data-bs-toggle="modal"
+								data-bs-target="#bookingModal">
+								Book Now
+							</button>
 						</div>
 					</div>
 				</div>
 			</div>
 	</section>
 
+<!-- Bootstrap Modal -->
+<div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h1 class="modal-title fs-5" id="bookingModalLabel">Booking Form</h1>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+
+			<div class="modal-body">
+				<form id="whatsappForm">
+					<!-- Main User Details -->
+					<div class="mb-3">
+						<label for="name" class="form-label">Name:</label>
+						<input type="text" class="form-control" id="name" required>
+					</div>
+
+					<div class="mb-3">
+						<label for="phone" class="form-label">Phone Number:</label>
+						<input type="tel" class="form-control" id="phone" required>
+					</div>
+
+					<div class="mb-3">
+						<label for="address" class="form-label">Address:</label>
+						<textarea class="form-control" id="address" rows="2" required></textarea>
+					</div>
+
+					<!-- Dynamic Family Members Section -->
+					<div id="familyMembers"></div>
+					<div class="d-flex justify-content-end mb-3">
+						<button type="button" class="btn btn-success btn-sm" id="addFamilyBtn">+ Add Family</button>
+					</div>
+					<div class="modal-footer">
+						<button type="submit" class="btn btn-primary">Submit</button>
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
 
 	<footer>
-
 		<div class="footer-row2">
 			<div class="container">
 				<div class="row justify-content-between">
 					<div class="col-lg-5 col-sm-6  ftr-brand-pp">
-						<a class="navbar-brand  f-dark-logo" href="#"> <img src="images/logo/logo.jpeg"
+						<a class="navbar-brand  f-dark-logo" href="#"> <img src="img/covai/img/logo1.png"
 								alt="Logo" /></a>
-						<a class="navbar-brand  f-white-logo" href="#"> <img src="images/logo/logo.jpeg"
+						<a class="navbar-brand  f-white-logo" href="#"> <img src="img/covai/img/logo1.png"
 								alt="Logo" /></a>
-						<p>Let B-TECH INFO SOLUTIONS be your trusted digital partner. Get in touch with us today! 🚀</p>
+						<p>At Covai Bio Labs, we believe in empowering healthier lives through accurate diagnostics. Our
+							commitment to quality testing, fast turnaround, and customer satisfaction sets us apart.
+							Contact us today for reliable lab services you can count on.</p>
 					</div>
 					<div class="col-lg-3 col-sm-6">
 						<h5>Useful Links</h5>
 						<ul class="footer-address-list link-hover">
 							<li>
 								<a href="index.html" class="menu-links">Home</a>
-	
+
 							</li>
 							<li>
 								<a href="about-us.html" class="menu-links">About Us</a>
 							</li>
-	
+
 							<li>
-								<a href="products.html" class="menu-links">Digital products</a>
+								<a href="products.html" class="menu-links">Health Package</a>
 							</li>
-							<li>
+							<!-- <li>
 								<a href="our-clients.html" class="menu-links">Account Services</a>
-							</li>
+							</li> -->
 							<li>
 								<a href="contact-us.html" class="menu-links">Contact Us</a>
 							</li>
@@ -413,16 +436,14 @@ Find potential customers and targeted leads to increase sales and business growt
 						<ul class="footer-address-list ftr-details">
 							<li>
 								<span><i class="fas fa-envelope"></i></span>
-								<p>Email <span> <a
-											href="mailto:btechinfosolutions2023@gmail.com">btechinfosolutions2023@gmail.com</a></span>
+								<p>Email <span> <a href="mailto:covaibiolabs@gmail.com" target="_blank">covaibiolabs@gmail.com</a></span>
 								</p>
 							</li>
 							<li>
 								<span><i class="fas fa-phone-alt"></i></span>
 								<p>Phone
-									 <span> <a href="tel:+91 84385 85876">+91 84385 85876</a></span>
-									 <span> <a href="tel:+91 96004 86876">+91 96004 86876</a></span>
-										</p>
+									<span> <a href="tel:+918807091207" target="_blank">+91 88070 91207</a></span>
+								</p>
 							</li>
 							<div class="">
 								<!-- <li>
@@ -433,25 +454,24 @@ Find potential customers and targeted leads to increase sales and business growt
 								</li> -->
 								<li>
 									<span><i class="fas fa-map-marker-alt"></i></span>
-									<p>Corporate Office <span> 
-										No.11/A, Subramaniya Samy Kovil Street,
-										Melachinthamani,
-										Tiruchirappalli,
-										Tamil Nadu - 620002.</span></p>
+									<p>Covai Labs<span>
+										</span></p>
 								</li>
 							</div>
 						</ul>
 					</div>
 
-					<p class=" border-bottom pb-2 text-justify pt-3  border-2">© 2023 All Rights Reserved By <b
-							class="text-primary"><a href="https://btechinfosolutions.in/">B-Tech Info Solutions</a></b></p>
+					<p class=" border-bottom pb-2 text-justify pt-3  border-2">© 2025 All Rights Reserved By <b
+							class="text-primary"><a href="">Covai Bio Labs</a></b>
+					</p>
 				</div>
 			</div>
 		</div>
-
-
 	</footer>
 
+	<a href="https://wa.me/+918807091207" class="fab-whatsapp" target="_blank">
+		<img src="images/icons/whatsapp.svg" alt="WhatsApp icon" />
+	</a>
 
 	<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
 	<script src="js/vendor/modernizr-3.5.0.min.js"></script>
@@ -461,6 +481,76 @@ Find potential customers and targeted leads to increase sales and business growt
 	<script src="js/dark-mode.js"></script>
 
 	<script src="js/main.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	<script>
+		// Add Family Member
+		document.getElementById("addFamilyBtn").addEventListener("click", function () {
+			const familyDiv = document.createElement("div");
+			familyDiv.classList.add("mb-3");
+			familyDiv.innerHTML = `
+				<div class="card p-3 mb-2">
+					<h6>Family Member</h6>
+					<div class="mb-2">
+						<label class="form-label">Name:</label>
+						<input type="text" class="form-control family-name" required>
+					</div>
+					<div class="mb-2">
+						<label class="form-label">Phone Number:</label>
+						<input type="tel" class="form-control family-phone" required>
+					</div>
+					<button type="button" class="btn btn-danger btn-sm remove-family">Remove</button>
+				</div>
+			`;
+
+			// Remove Family Member
+			familyDiv.querySelector(".remove-family").addEventListener("click", () => {
+				familyDiv.remove();
+			});
+
+			document.getElementById("familyMembers").appendChild(familyDiv);
+		});
+
+		// Form Submission
+		document.getElementById("whatsappForm").addEventListener("submit", function (event) {
+			event.preventDefault();
+
+			// Get Main User Data
+			const name = document.getElementById("name").value;
+			const phone = document.getElementById("phone").value;
+			const address = document.getElementById("address").value;
+
+			let message = `Hello, CovaiLabs!%0A%0ABooking Details:%0A- Name: ${name}%0A- Phone: ${phone}%0A- Address: ${address}`;
+
+			// Get Family Member Data
+			const familyNames = document.querySelectorAll(".family-name");
+			const familyPhones = document.querySelectorAll(".family-phone");
+
+			if (familyNames.length > 0) {
+				message += `%0A%0A👨‍👩‍👧‍👦 Family Members:`;
+				familyNames.forEach((el, index) => {
+					const famName = el.value;
+					const famPhone = familyPhones[index].value;
+					message += `%0A${index + 1}. Name: ${famName}, Phone: ${famPhone}`;
+				});
+			}
+
+			// WhatsApp Number (Replace with CovaiLabs Number)
+			const whatsappNumber = "916385791235"; // Example: +91 for India
+
+			// Open WhatsApp Link
+			const whatsappURL = `https://wa.me/${whatsappNumber}?text=${message}`;
+			window.open(whatsappURL, "_blank");
+
+			// Close Modal and Reset Form
+			const modal = bootstrap.Modal.getInstance(document.getElementById("bookingModal"));
+			modal.hide();  // Close modal
+
+			// Reset form and clear family members
+			document.getElementById("whatsappForm").reset();
+			document.getElementById("familyMembers").innerHTML = "";
+		});
+	</script>
 </body>
 
 </html>

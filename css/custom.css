@@ -31,3 +31,56 @@
         border-radius: 8px;
     }
 }
+
+/* floating action button whatsapp */
+.fab-whatsapp {
+    position: fixed;
+    bottom: 125px;
+    right: 13px;
+    background-color: #25d366;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fab-whatsapp img {
+    width: 50px;
+    height: 50px;
+}
+
+.fab-whatsapp:hover {
+    background-color: #128c7e;
+    /* Darker green on hover */
+}
+
+.why-choose .s-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%; /* Ensures all divs are equal height */
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.s-card-icon img {
+    width: 200px !important; /* Increase image size */
+    height: 120px; /* Maintain uniform height */
+    object-fit: contain; /* Ensures proper scaling */
+    margin-bottom: 15px;
+}
+
+.why-choose .row.upset {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.why-choose .col-lg {
+    display: flex;
+}
