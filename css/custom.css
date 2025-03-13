@@ -84,3 +84,36 @@
 .why-choose .col-lg {
     display: flex;
 }
+/* Hide Health Packages in regular nav for small screens */
+@media (max-width: 768px) {
+    .hideonmobile {
+        display: none;
+    }
+    .right-end-btn {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        /* Space between icons and links */
+    }
+
+    .health-package .menu-links {
+        white-space: nowrap;
+        /* Prevent line break */
+        padding: 8px 12px;
+        font-size: 16px;
+        color: #000;
+        display: inline-block;
+        line-height: 1;
+        /* Align vertically */
+    }
+
+    .slide-btns {
+        text-align: center; /* Center align on mobile */
+        margin-top: 15px;
+    }
+
+    .slide-btns .btn-main {
+        display: inline-block; /* Keep the button inline and centered */
+    }
+
+}

@@ -21,6 +21,9 @@
 		rel="stylesheet">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
+	<!-- Bootstrap CSS -->
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+
 	<link href="css/style.css" rel="stylesheet">
 	<link href="css/responsive.css" rel="stylesheet">
 	<link href="css/darkmode.css" rel="stylesheet">
@@ -57,6 +60,39 @@
 			display: flex;
 			justify-content: center;
 		}
+
+		.custom-dropdown-btn {
+			border: 2px solid black;
+			color: #ff3131;
+			font-weight: 600;
+			padding: 10px;
+			border-radius: 30px;
+			background-color: transparent;
+			transition: all 0.3s ease;
+		}
+
+		.custom-dropdown-btn:hover {
+			background-color: #ff3131;
+			color: #fff;
+		}
+
+		.details {
+			display: none;
+			padding: 10px;
+			border: 1px solid #ccc;
+			margin-top: 10px;
+		}
+
+		button {
+			padding: 8px 16px;
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			cursor: pointer;
+			border-radius: 5px;
+			font-size: 16px;
+		}
+
 	</style>
 </head>
 
@@ -66,8 +102,8 @@
 		<div class="container-fluid m-pad">
 			<div class="menu-header">
 				<div class="dsk-logo"><a class="nav-brand" href="index.html">
-					<img src="img/covai/img/logo.jpg" alt="Logo" class="mega-white-logo" style="width: 150px;"/>
-					<img src="img/covai/img/logo.jpg" alt="Logo" class="mega-darks-logo" style="width: 150px;"/>
+						<img src="img/covai/img/logo.jpg" alt="Logo" class="mega-white-logo" style="width: 150px;" />
+						<img src="img/covai/img/logo.jpg" alt="Logo" class="mega-darks-logo" style="width: 150px;" />
 					</a>
 				</div>
 				<div class="custom-nav" role="navigation">
@@ -81,7 +117,7 @@
 						</li>
 
 						<li>
-							<a href="products.html" class="menu-links">Health Package</a>
+							<a href="products.html" class="menu-links">Health Packages</a>
 						</li>
 						<!-- <li>
 							<a href="our-clients.html" class="menu-links">Account Services</a>
@@ -98,6 +134,10 @@
 						<li class="hidemobile"><a href="contact-us.html" class="btn-br bg-btn3 btshad-b2 lnk">Request A
 								Quote <span class="circle"></span></a> </li>
 
+						<!-- Health Packages - Visible only on mobile -->
+						<li class="hidedesktop health-package">
+							<a href="products.html" class="menu-links">Health Packages</a>
+						</li>
 						<li class="hidedesktop"><a data-bs-toggle="offcanvas" href="#offcanvasExample"
 								class="btn-round- btn-br bg-btn2"><i class="fas fa-phone-alt"></i></a></li>
 						<li class="navm- hidedesktop"> <a class="toggle" href="#"><span></span></a></li>
@@ -116,7 +156,7 @@
 					</li>
 
 					<li>
-						<a href="products.html">Health Package</a>
+						<a href="products.html">Health Packages</a>
 					</li>
 					<!-- <li>
 						<a href="our-clients.html">Account Services</a>
@@ -214,27 +254,130 @@
 			<div class="row">
 				<div class="col-lg-4 col-sm-6">
 					<div class="full-image-card hover-scale bg-light rounded shadow p-3">
-						<h4 class="text-center pb-2">Health Package 1</h4>
-						<div class=""><a href="#"><img src="img/covai/img/blood1.webp" alt="products"
+						<h4 class="text-center pb-2">Health Package 1 (60 Tests)</h4>
+						<div class=""><a href="#"><img src="img/covai/img/package (1).jpg" alt="products"
 									class="digi_images" width="100%" /></a>
 						</div>
 						<div class="info-text-block text-center">
-							<h4 class="text-center">Our Price - <span style="text-decoration: line-through; color: red;">₹ 1500</span> ₹ 399</h4>
+							<h4 class="text-center">Our Price -
+								<span style="text-decoration: line-through; color: red;">₹ 1500</span>
+								<span style="font-weight: bold; color: #28a745;">₹ 399</span>
+							</h4>
 
-							<p>
-							<ul class="text-justify">
-								<li>1. BP</li>
-								<li>2. PULSE</li>
-								<li>3. CBC</li>
-								<li>4. FBS</li>
-								<li>5. UREA </li>
-								<li>6. CREATININE</li>
-								<li>7. URINE ROUTINE </li>
-								<li>8. Free Health consultation</li>
-							</ul>
-							</p>
-							<button type="button" class="btn btn-primary mt-2" data-bs-toggle="modal"
-								data-bs-target="#bookingModal">
+							<!-- View Test Dropdown -->
+							<button class="btn btn-outline-secondary custom-dropdown-btn" type="button"
+								onclick="toggleTestDetails('testList1')">
+								View Test
+							</button>
+
+							<div id="testList1" style="display: none; margin-top: 10px;">
+								<ul class="list-group text-start">
+									<li class="list-group-item"><strong>1. BP</strong> <span
+											class="text-muted">(2)</span></li>
+									<li class="list-group-item"><strong>2. PULSE RATE</strong> <span
+											class="text-muted">(1)</span></li>
+									<li class="list-group-item"><strong>3. CBC</strong> <span
+											class="text-muted">(18)</span></li>
+									<li class="list-group-item"><strong>4. FBS</strong> <span
+											class="text-muted">(1)</span></li>
+									<li class="list-group-item"><strong>5. KIDNEY PROFILE</strong> <span
+											class="text-muted">(4)</span></li>
+									<li class="list-group-item"><strong>6. URINE COMPLETE</strong> <span
+											class="text-muted">(25)</span></li>
+								</ul>
+							</div>
+
+
+
+							<!-- Book Now Button -->
+							<button type="button" class="btn btn-primary mt-3 book-now" data-package="Health Package 1">
+								Book Now
+							</button>
+						</div>
+
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<div class="full-image-card hover-scale bg-light rounded shadow p-3">
+						<h4 class="text-center pb-2">Health Package 2 (8 Tests)</h4>
+						<div class=""><a href="#"><img src="img/covai/img/package (2).jpg" alt="products"
+									class="digi_images" width="100%" /></a>
+						</div>
+						<div class="info-text-block text-center">
+							<h4 class="text-center">
+								Our Price -
+								<span style="text-decoration: line-through; color: red;">₹ 2200</span>
+								<span style="font-weight: bold; color: #28a745;">₹ 650</span>
+							</h4>
+
+							<!-- View Test Dropdown -->
+							<button class="btn btn-outline-secondary custom-dropdown-btn" type="button"
+								onclick="toggleTestDetails('testList2')">
+								View Test
+							</button>
+							<div id="testList2" style="display: none; margin-top: 10px;">
+								<ul class="list-group text-start">
+									<li class="list-group-item"><strong>1. BP</strong> <span
+											class="text-muted">(2)</span></li>
+									<li class="list-group-item"><strong>2. PULSE</strong> <span
+											class="text-muted">(1)</span></li>
+									<li class="list-group-item"><strong>3. HIV</strong> <span
+											class="text-muted">(2)</span></li>
+									<li class="list-group-item"><strong>4. HbsAg</strong> <span
+											class="text-muted">(1)</span></li>
+									<li class="list-group-item"><strong>5. HCV</strong> <span
+											class="text-muted">(2)</span></li>
+									<li class="list-group-item"><strong>6. CONSULTATION</strong></li>
+								</ul>
+							</div>
+
+							<!-- Book Now Button -->
+							<button type="button" class="btn btn-primary mt-3 book-now" data-package="Health Package 2">
+								Book Now
+							</button>
+						</div>
+
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<div class="full-image-card hover-scale bg-light rounded shadow p-3">
+						<h4 class="text-center pb-2">Health Package 3 (48 Tests)</h4>
+						<div class=""><a href="#"><img src="img/covai/img/package (3).jpg" alt="products"
+									class="digi_images" width="100%" /></a>
+						</div>
+						<div class="info-text-block text-center">
+							<h4>Our Price - <span style="text-decoration: line-through; color: red;">₹ 2500</span> ₹ 699
+							</h4>
+							<!-- View Test Dropdown -->
+							<button class="btn btn-outline-secondary custom-dropdown-btn" type="button"
+								onclick="toggleTestDetails('testList3')">
+								View Test
+							</button>
+							<div id="testList3" style="display: none; margin-top: 10px;">
+								<ul class="list-group text-start">
+									<li><a class="dropdown-item py-2" href="#"><strong>1. BP</strong> <span
+												class="text-muted">(2)</span></a></li>
+									<li><a class="dropdown-item py-2" href="#"><strong>2. PULSE</strong> <span
+												class="text-muted">(1)</span></a></li>
+									<li><a class="dropdown-item py-2" href="#"><strong>3. FBS</strong> <span
+												class="text-muted">(1)</span></a></li>
+									<li><a class="dropdown-item py-2" href="#"><strong>4. THYROID</strong> <span
+												class="text-muted">(1)</span></a></li>
+									<li><a class="dropdown-item py-2" href="#"><strong>5. RENAL FUNCTION</strong> <span
+												class="text-muted">(4)</span></a></li>
+									<li><a class="dropdown-item py-2" href="#"><strong>6. LIVER FUNCTION</strong> <span
+												class="text-muted">(12)</span></a></li>
+									<li><a class="dropdown-item py-2" href="#"><strong>7. LIPID PROFILE</strong> <span
+												class="text-muted">(9)</span></a></li>
+									<li><a class="dropdown-item py-2" href="#"><strong>8. COMPLETE BLOOD COUNT</strong>
+											<span class="text-muted">(18)</span></a></li>
+									<li><a class="dropdown-item py-2" href="#"><strong>9. DOCTOR
+												CONSULTATION</strong></a></li>
+								</ul>
+							</div>
+
+							<!-- Book Now Button -->
+							<button type="button" class="btn btn-primary mt-3 book-now" data-package="Health Package 3">
 								Book Now
 							</button>
 						</div>
@@ -242,159 +385,171 @@
 				</div>
 				<div class="col-lg-4 col-sm-6">
 					<div class="full-image-card hover-scale bg-light rounded shadow p-3">
-						<h4 class="text-center pb-2">Health Package 2</h4>
-						<div class=""><a href="#"><img src="img/covai/img/blood2.jpg" alt="products" class="digi_images"
-									width="100%" /></a>
+						<h4 class="text-center pb-2">Health Package 4 (77 Tests)</h4>
+						<div class=""><a href="#"><img src="img/covai/img/package (4).jpg" alt="products"
+									class="digi_images" width="100%" /></a>
 						</div>
 						<div class="info-text-block text-center">
-							<h4 class="text-center">Our Price - <span style="text-decoration: line-through; color: red;">₹ 2200</span >₹ 650</h4>
-							<p>
-							<ul class="text-justify">
-								<li>1. BP</li>
-								<li>2. PULSE</li>
-								<li>3. HIV </li>
-								<li>4. HbsAG</li>
-								<li>5. HCV </li>
-								<li>6. FREE HEALTH CONSULATION</li>
-							</ul>
-							</p>
-							<button type="button" class="btn btn-primary mt-2" data-bs-toggle="modal"
-								data-bs-target="#bookingModal">
+							<h4>
+								Our Price -
+								<span style="text-decoration: line-through; color: red;">₹ 3500</span>
+								<span style="font-weight: bold; color: #28a745;">₹ 1199</span>
+							</h4>
+
+							<!-- View Test Dropdown -->
+							<button class="btn btn-outline-secondary custom-dropdown-btn" type="button"
+								onclick="toggleTestDetails('testList4')">
+								View Test
+							</button>
+							<div id="testList4" style="display: none; margin-top: 10px;">
+								<ul class="list-group text-start">
+									<li><a class="dropdown-item py-2" href="#"><strong>1. BP</strong> <span
+												class="text-muted">(2)</span></a></li>
+									<li><a class="dropdown-item py-2" href="#"><strong>2. PULSE</strong> <span
+												class="text-muted">(1)</span></a></li>
+									<li><a class="dropdown-item py-2" href="#"><strong>3. FBS</strong> <span
+												class="text-muted">(1)</span></a></li>
+									<li><a class="dropdown-item py-2" href="#"><strong>4. HBA1C</strong> <span
+												class="text-muted">(3)</span></a></li>
+									<li><a class="dropdown-item py-2" href="#"><strong>5. THYROID</strong> <span
+												class="text-muted">(1)</span></a></li>
+									<li><a class="dropdown-item py-2" href="#"><strong>6. RENAL FUNCTION</strong> <span
+												class="text-muted">(4)</span></a></li>
+									<li><a class="dropdown-item py-2" href="#"><strong>7. LIVER FUNCTION</strong> <span
+												class="text-muted">(12)</span></a></li>
+									<li><a class="dropdown-item py-2" href="#"><strong>8. LIPID PROFILE</strong> <span
+												class="text-muted">(9)</span></a></li>
+									<li><a class="dropdown-item py-2" href="#"><strong>9. COMPLETE BLOOD COUNT</strong>
+											<span class="text-muted">(18)</span></a></li>
+									<li><a class="dropdown-item py-2" href="#"><strong>10. COMPLETE URINE
+												EXAMINATION</strong> <span class="text-muted">(25)</span></a></li>
+									<li><a class="dropdown-item py-2" href="#"><strong>11. VITAMIN D</strong> <span
+												class="text-muted">(1)</span></a></li>
+									<li><a class="dropdown-item py-2" href="#"><strong>12. DOCTOR
+												CONSULTATION</strong></a></li>
+								</ul>
+							</div>
+
+							<!-- Book Now Button -->
+							<button type="button" class="btn btn-primary mt-3 book-now" data-package="Health Package 4">
 								Book Now
 							</button>
 						</div>
+
 					</div>
 				</div>
 				<div class="col-lg-4 col-sm-6">
 					<div class="full-image-card hover-scale bg-light rounded shadow p-3">
-						<h4 class="text-center pb-2">Health Package 3</h4>
-						<div class=""><a href="#"><img src="img/covai/img/blood4.jpg" alt="products" class="digi_images"
-									width="100%" /></a>
+						<h4 class="text-center pb-2">Health Package 5 (82 Tests)</h4>
+						<div class=""><a href="#"><img src="img/covai/img/package (5).jpg" alt="products"
+									class="digi_images" width="100%" /></a>
 						</div>
 						<div class="info-text-block text-center">
-							<h4>Our Price - <span style="text-decoration: line-through; color: red;">₹ 2500</span> ₹ 699</h4>
-							<ul class="text-justify">
-								<li>1. BP</li>
-								<li>2. PULSE</li>
-								<li>3. FBS </li>
-								<li>4. THYROID</li>
-								<li>5. RENAL FUNCTION TEST </li>
-								<li>6. LIVER FUNCTION TEST</li>
-								<li>7. LIPID PROFILE</li>
-								<li>8. COMPLETE BLOOD COUNT</li>
-								<li>9. FREE HEALTH CONSULATION</li>
-							</ul>
-							<button type="button" class="btn btn-primary mt-2" data-bs-toggle="modal"
-								data-bs-target="#bookingModal">
+							<h4>
+								Our Price -
+								<span style="text-decoration: line-through; color: red;">₹ 4500</span>
+								<span style="font-weight: bold; color: #28a745;">₹ 1599</span>
+							</h4>
+
+							<!-- View Test Dropdown -->
+							<button class="btn btn-outline-secondary custom-dropdown-btn" type="button"
+								onclick="toggleTestDetails('testList5')">
+								View Test
+							</button>
+							<div id="testList5" style="display: none; margin-top: 10px;">
+								<ul class="list-group text-start">
+									<li><a class="dropdown-item py-2" href="#"><strong>1. BP</strong> <span
+												class="text-muted">(2)</span></a></li>
+									<li><a class="dropdown-item py-2" href="#"><strong>2. PULSE</strong> <span
+												class="text-muted">(1)</span></a></li>
+									<li><a class="dropdown-item py-2" href="#"><strong>3. CALCIUM</strong> <span
+												class="text-muted">(1)</span></a></li>
+									<li><a class="dropdown-item py-2" href="#"><strong>4. VITAMIN</strong> <span
+												class="text-muted">(1)</span></a></li>
+									<li><a class="dropdown-item py-2" href="#"><strong>5. TIBC</strong> <span
+												class="text-muted">(1)</span></a></li>
+									<li><a class="dropdown-item py-2" href="#"><strong>6. FBS</strong> <span
+												class="text-muted">(1)</span></a></li>
+									<li><a class="dropdown-item py-2" href="#"><strong>7. HbA1C</strong> <span
+												class="text-muted">(3)</span></a></li>
+									<li><a class="dropdown-item py-2" href="#"><strong>8. CBC</strong> <span
+												class="text-muted">(18)</span></a></li>
+									<li><a class="dropdown-item py-2" href="#"><strong>9. LIPID PROFILE</strong> <span
+												class="text-muted">(9)</span></a></li>
+									<li><a class="dropdown-item py-2" href="#"><strong>10. ELECTROLYTES</strong> <span
+												class="text-muted">(3)</span></a></li>
+									<li><a class="dropdown-item py-2" href="#"><strong>11. URINE ROUTINE</strong> <span
+												class="text-muted">(25)</span></a></li>
+									<li><a class="dropdown-item py-2" href="#"><strong>12. LFT</strong> <span
+												class="text-muted">(12)</span></a></li>
+									<li><a class="dropdown-item py-2" href="#"><strong>13. RFT</strong> <span
+												class="text-muted">(4)</span></a></li>
+									<li><a class="dropdown-item py-2" href="#"><strong>14. FREE HEALTH
+												CONSULTATION</strong></a></li>
+								</ul>
+							</div>
+
+							<!-- Book Now Button -->
+							<button type="button" class="btn btn-primary mt-3 book-now" data-package="Health Package 5">
 								Book Now
 							</button>
 						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-sm-6">
-					<div class="full-image-card hover-scale bg-light rounded shadow p-3">
-						<h4 class="text-center pb-2">Health Package 4</h4>
-						<div class=""><a href="#"><img src="img/covai/img/img1.jpg" alt="products" class="digi_images"
-									width="100%" /></a>
-						</div>
-						<div class="info-text-block text-center">
-							<h4>Our Price - <span style="text-decoration: line-through; color: red;">₹ 3500</span> ₹ 1199</h4>
-							<ul class="text-justify">
-								<li>1. BP</li>
-								<li>2. PULSE</li>
-								<li>3. FBS </li>
-								<li>4. HBA1C</li>
-								<li>5. RENAL FUNCTION TEST </li>
-								<li>6. LIVER FUNCTION TEST</li>
-								<li>7. LIPID PROFILE </li>
-								<li>8. COMPLETE BLOOD COUNT</li>
-								<li>9. COMPLETE URINE ROUTINE </li>
-								<li>10. VITAMIN D</li>
-								<li>11. THYROID</li>
-								<li>12. FREE HEALTH CONSULATION</li>
-							</ul>
-							<button type="button" class="btn btn-primary mt-2" data-bs-toggle="modal"
-								data-bs-target="#bookingModal">
-								Book Now
-							</button>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-sm-6">
-					<div class="full-image-card hover-scale bg-light rounded shadow p-3">
-						<h4 class="text-center pb-2">Health Package 5</h4>
-						<div class=""><a href="#"><img src="img/covai/img/img2.jpg" alt="products" class="digi_images"
-									width="100%" /></a>
-						</div>
-						<div class="info-text-block text-center">
-							<h4>Our Price - <span style="text-decoration: line-through; color: red;">₹ 4500</span> ₹ 1599</h4>
-							<ul class="text-justify">
-								<li>1. BP</li>
-								<li>2. PULSE</li>
-								<li>3. CALCIUM </li>
-								<li>4. VITAMIN</li>
-								<li>5. TIBC </li>
-								<li>6. FBS</li>
-								<li>7. HbA1C</li>
-								<li>8. CBC</li>
-								<li>9. LIPID PROFILE </li>
-								<li>10. ELECTROLYTES</li>
-								<li>11. URINE ROUTINE </li>
-								<li>12. LFT</li>
-								<li>13. RFT </li>
-								<li>14. FREE HEALTH CONSULATION</li>
-							</ul>
-							<button type="button" class="btn btn-primary mt-2" data-bs-toggle="modal"
-								data-bs-target="#bookingModal">
-								Book Now
-							</button>
-						</div>
+
 					</div>
 				</div>
 			</div>
 	</section>
 
-<!-- Bootstrap Modal -->
-<div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<div class="modal-header">
-				<h1 class="modal-title fs-5" id="bookingModalLabel">Booking Form</h1>
-				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-			</div>
+	<!-- Bootstrap Modal -->
+	<div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-title fs-5" id="bookingModalLabel">Booking Form</h1>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
 
-			<div class="modal-body">
-				<form id="whatsappForm">
-					<!-- Main User Details -->
-					<div class="mb-3">
-						<label for="name" class="form-label">Name:</label>
-						<input type="text" class="form-control" id="name" required>
-					</div>
+				<div class="modal-body">
+					<form id="whatsappForm">
+						<!-- Main User Details -->
+						<div class="mb-3">
+							<label for="name" class="form-label">Name:</label>
+							<input type="text" class="form-control" id="name" required>
+						</div>
 
-					<div class="mb-3">
-						<label for="phone" class="form-label">Phone Number:</label>
-						<input type="tel" class="form-control" id="phone" required>
-					</div>
+						<div class="mb-3">
+							<label for="phone" class="form-label">Phone Number:</label>
+							<input type="tel" class="form-control" id="phone" required>
+						</div>
 
-					<div class="mb-3">
-						<label for="address" class="form-label">Address:</label>
-						<textarea class="form-control" id="address" rows="2" required></textarea>
-					</div>
+						<div class="mb-3">
+							<label for="email" class="form-label">Email:</label>
+							<input type="email" class="form-control" id="email" required>
+						</div>
 
-					<!-- Dynamic Family Members Section -->
-					<div id="familyMembers"></div>
-					<div class="d-flex justify-content-end mb-3">
-						<button type="button" class="btn btn-success btn-sm" id="addFamilyBtn">+ Add Family</button>
-					</div>
-					<div class="modal-footer">
-						<button type="submit" class="btn btn-primary">Submit</button>
-						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-					</div>
-				</form>
+						<div class="mb-3">
+							<label for="address" class="form-label">Address:</label>
+							<textarea class="form-control" id="address" rows="2" required></textarea>
+						</div>
+
+						<!-- Hidden Package Field -->
+						<input type="hidden" id="packageName">
+
+						<!-- Dynamic Family Members Section -->
+						<div id="familyMembers"></div>
+						<div class="d-flex justify-content-end mb-3">
+							<button type="button" class="btn btn-success btn-sm" id="addFamilyBtn">+ Add Family</button>
+						</div>
+
+						<div class="modal-footer">
+							<button type="submit" class="btn btn-primary">Submit</button>
+							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						</div>
+					</form>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 
 	<footer>
 		<div class="footer-row2">
@@ -410,7 +565,7 @@
 							Contact us today for reliable lab services you can count on.</p>
 					</div>
 					<div class="col-lg-3 col-sm-6">
-						<h5>Useful Links</h5>
+						<h5>Go To</h5>
 						<ul class="footer-address-list link-hover">
 							<li>
 								<a href="index.html" class="menu-links">Home</a>
@@ -421,7 +576,7 @@
 							</li>
 
 							<li>
-								<a href="products.html" class="menu-links">Health Package</a>
+								<a href="products.html" class="menu-links">Health Packages</a>
 							</li>
 							<!-- <li>
 								<a href="our-clients.html" class="menu-links">Account Services</a>
@@ -436,7 +591,8 @@
 						<ul class="footer-address-list ftr-details">
 							<li>
 								<span><i class="fas fa-envelope"></i></span>
-								<p>Email <span> <a href="mailto:covaibiolabs@gmail.com" target="_blank">covaibiolabs@gmail.com</a></span>
+								<p>Email <span> <a href="mailto:covaibiolabs@gmail.com"
+											target="_blank">covaibiolabs@gmail.com</a></span>
 								</p>
 							</li>
 							<li>
@@ -483,25 +639,41 @@
 	<script src="js/main.js"></script>
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	<!-- Bootstrap JS + Popper.js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.2/js/bootstrap.min.js"></script>
+
 	<script>
+		// Open Modal with Package Name
+		document.querySelectorAll('.book-now').forEach(button => {
+			button.addEventListener('click', function () {
+				const packageName = this.getAttribute('data-package');
+				document.getElementById('packageName').value = packageName;
+
+				// Show Modal
+				const modal = new bootstrap.Modal(document.getElementById('bookingModal'));
+				modal.show();
+			});
+		});
+
 		// Add Family Member
 		document.getElementById("addFamilyBtn").addEventListener("click", function () {
 			const familyDiv = document.createElement("div");
 			familyDiv.classList.add("mb-3");
 			familyDiv.innerHTML = `
-				<div class="card p-3 mb-2">
-					<h6>Family Member</h6>
-					<div class="mb-2">
-						<label class="form-label">Name:</label>
-						<input type="text" class="form-control family-name" required>
-					</div>
-					<div class="mb-2">
-						<label class="form-label">Phone Number:</label>
-						<input type="tel" class="form-control family-phone" required>
-					</div>
-					<button type="button" class="btn btn-danger btn-sm remove-family">Remove</button>
+			<div class="card p-3 mb-2">
+				<h6>Family Member</h6>
+				<div class="mb-2">
+					<label class="form-label">Name:</label>
+					<input type="text" class="form-control family-name" required>
 				</div>
-			`;
+				<div class="mb-2">
+					<label class="form-label">Phone Number:</label>
+					<input type="tel" class="form-control family-phone" required>
+				</div>
+				<button type="button" class="btn btn-danger btn-sm remove-family">Remove</button>
+			</div>
+		`;
 
 			// Remove Family Member
 			familyDiv.querySelector(".remove-family").addEventListener("click", () => {
@@ -518,16 +690,18 @@
 			// Get Main User Data
 			const name = document.getElementById("name").value;
 			const phone = document.getElementById("phone").value;
+			const email = document.getElementById("email").value;
 			const address = document.getElementById("address").value;
+			const packageName = document.getElementById("packageName").value;
 
-			let message = `Hello, CovaiLabs!%0A%0ABooking Details:%0A- Name: ${name}%0A- Phone: ${phone}%0A- Address: ${address}`;
+			let message = `Hello, CovaiLabs!%0A%0ABooking Details:%0A- Name: ${name}%0A- Phone: ${phone}%0A- Email: ${email}%0A- Address: ${address}%0A- Package: ${packageName}`;
 
 			// Get Family Member Data
 			const familyNames = document.querySelectorAll(".family-name");
 			const familyPhones = document.querySelectorAll(".family-phone");
 
 			if (familyNames.length > 0) {
-				message += `%0A%0A👨‍👩‍👧‍👦 Family Members:`;
+				message += `%0A%0A Family Members:`;
 				familyNames.forEach((el, index) => {
 					const famName = el.value;
 					const famPhone = familyPhones[index].value;
@@ -536,7 +710,7 @@
 			}
 
 			// WhatsApp Number (Replace with CovaiLabs Number)
-			const whatsappNumber = "918807091207"; // Example: +91 for India
+			const whatsappNumber = "918807091207"; // Example: +91 for India 
 
 			// Open WhatsApp Link
 			const whatsappURL = `https://wa.me/${whatsappNumber}?text=${message}`;
@@ -550,6 +724,20 @@
 			document.getElementById("whatsappForm").reset();
 			document.getElementById("familyMembers").innerHTML = "";
 		});
+		//view test
+		function toggleTestDetails(id) {
+			// Hide all other lists
+			document.querySelectorAll('[id^="testList"]').forEach(el => {
+				if (el.id !== id) {
+					el.style.display = 'none';
+				}
+			});
+			// Toggle the clicked list
+			const element = document.getElementById(id);
+			if (element) {
+				element.style.display = element.style.display === 'none' ? 'block' : 'none';
+			}
+		}
 	</script>
 </body>
 
